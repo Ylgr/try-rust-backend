@@ -1,8 +1,8 @@
 use diesel::prelude::*;
-
+use uuid::Uuid;
 #[derive(Queryable)]
 pub struct Post {
-    pub id: i32,
+    pub id: Uuid,
     pub title: String,
     pub body: String,
     pub published: bool,
